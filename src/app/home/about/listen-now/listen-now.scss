@@ -1,0 +1,91 @@
+#listen-now {
+  color: white;
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6vw 2vw;
+    @media (max-width: 610px) {
+      padding: 0 8vw 2vw;
+
+    }
+    h2 {
+        font-family: "Outfit", sans-serif;
+        font-size: 30px;
+    }
+    a {
+      font-family: "Instrument Sans", serif;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .playlist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        font-size: 25px;
+        @media (max-width: 1279px) {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        @media (max-width: 610px) {
+          font-size: 14px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            .track {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              padding: 10px 0;
+              &:hover {
+                transform: translateX(8px);
+              }
+              .number {
+                width: 20px;
+                @media (max-width: 1279px) {
+                  width: 8px;
+                }
+              }
+              .thumb {
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+                border-radius: 4px;
+                @media (max-width: 610px) {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+              .title {
+                white-space: nowrap;
+              }
+              .dots {
+                flex: 1;
+                border-bottom: 3px dashed rgba(255,255,255,0.4);
+                margin: 0 10px;
+                transform: translateY(4px);
+              }
+              .duration {
+                min-width: 40px;
+                text-align: right;
+              }
+            }   
+        
+        }
+    }
+    .players {
+      display: inline-flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 3% 0;
+      img {
+        width: 3em;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }  
+  }    
+}   

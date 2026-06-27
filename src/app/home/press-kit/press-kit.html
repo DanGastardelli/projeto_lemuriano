@@ -1,1 +1,19 @@
-<p>press-kit works!</p>
+<div class="press_kit">
+    <div class="container">
+        <div class="fileWithThumbAndText">
+            @for (pdf of pdfs; track pdf.nome) {
+              <a [href]="pdf.url" target="_blank">
+                <img class="thumb_pdf" [src]="pdf.thumb" alt="Thumbnail PRESS KIT">
+              </a>
+            }
+            <span>
+                Conjunto de materiais informativos e promocionais — textos, fotos, amostras e vídeos - de shows e eventos
+            </span>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Sua ideia combina com a minha música?<br>
+            Vamos conversar!</h1>
+        <button onclick="window.location.href='mailto:contato.lemuriano@gmail.com'">ENTRE EM CONTATO</button>
+    </div>
+</div>
