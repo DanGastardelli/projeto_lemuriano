@@ -1,0 +1,54 @@
+{
+    "about.header": "Sobre l'artista",
+    "listen.header": "Escolta ara",
+    "trajectory.header": "Trajectòria",
+
+    "subTitle.home": "Música en estat líric",
+    "button_home.home": "Parlem?",
+
+    "title.about": "Sobre l'artista",
+    "p1.about": "Lemuriano és compositor, poeta i cantant. Els seus concerts estan construïts com a experiències immersives, en què les cançons es connecten i condueixen el públic a través d'una narrativa de principi a fi.",
+    "p2.about": "En format veu i guitarra, presenta cançons pròpies, clàssics de la música brasilera i poesia, unint una interpretació sensible amb arranjaments destacats.",
+    
+    "contact.button": "POSA'T EN CONTACTE",
+
+    "title.listen": "Cançons populars",
+
+    "carousel.slide1.title": "Soberano Jazz Club",
+    "carousel.slide1.desc": "Un dels principals locals de concerts de l'interior de Rio de Janeiro, on Lemuriano va realitzar dues actuacions amb aforament complet – veu i guitarra i també amb banda. Així, va consolidar la seva presència en l'escena d'autor de la regió amb concerts marcats per una forta connexió amb el públic local.",
+
+    "carousel.slide2.title": "Concert amb Hermínio Bello",
+    "carousel.slide2.desc": "El concert de Lemuriano va comptar amb la participació especial d'Hermínio Bello de Carvalho, en un moment destacat al so de la cançó 'Dia Sim, Dia Não' composta per tots dos músics.",
+
+    "carousel.slide3.title": "Concert Solar de Botafogo",
+    "carousel.slide3.desc": "El primer concert de Lemuriano al Solar de Botafogo, a Rio de Janeiro, el 2023, marcant un altre moment màgic a la ciutat amb una actuació d'autor.",
+
+    "carousel.slide4.title": "Concert Teatre Brigitte Blair",
+    "carousel.slide4.desc": "Una actuació íntima i màgica que va reforçar la identitat d'autor de Lemuriano i la connexió amb el públic.",
+
+    "carousel.slide5.title": "Concert Cesgranrio",
+    "carousel.slide5.desc": "El primer concert de Lemuriano a Cesgranrio va marcar el seu debut en aquest espai cultural, presentant al públic un repertori d'autor que va consolidar la seva presència en nous escenaris.",
+
+    "carousel.slide6.title": "Concert Cesgranrio 2",
+    "carousel.slide6.desc": "El segon concert a Cesgranrio va comptar amb la participació especial de Tuca Mei, reforçant el diàleg artístic i ampliant l'experiència del públic amb la trobada entre veus i trajectòries.",
+
+    "carousel.slide7.title": "Concert Veu i Guitarra a Minas Gerais",
+    "carousel.slide7.desc": "Concert realitzat per a la inauguració de l'estació ferroviària de la ciutat de São Sebastião do Rio Verde a Minas Gerais.",
+
+    "carousel.slide8.title": "Centre de la Música Carioca",
+    "carousel.slide8.desc": "Concert al Centre de la Música Carioca, amb una participació especial de Tuca Mei, marcant un moment especial en la trajectòria de Lemuriano.",
+
+    "carousel.slide9.title": "Sesc Rosinha de Valença",
+    "carousel.slide9.desc": "Concert al Sesc Rosinha de Valença, marcant el debut de Lemuriano en una unitat Sesc, amb banda completa a l'escenari.",
+
+    "carousel.slide10.title": "Centre Cultural Cazuza",
+    "carousel.slide10.desc": "Concert a Valença, a l'octubre de 2025 amb la participació especial de Tuca Mei.",
+
+    "p1.partnerships": "Reconegut compositor, poeta i productor cultural brasiler, responsable de donar a conèixer noms com Simone i Clementina de Jesus.",
+    "p2.partnerships": "Company de Lemuriano, és coautor de cançons com 'Dia Sim, Dia Não', enregistrada per Simone. La col·laboració uneix generacions — hi ha 65 anys de diferència — i Lemuriano té Hermínio com una de les seves majors inspiracions artístiques.",
+    "p3.partnerships": "Cantant i compositora, companya artística de Lemuriano. Junts han desenvolupat un treball marcat per cançons profundes i interpretacions intenses. Són coneguts per l'harmonia vocal i per una afinitat rara en la lírica i en els arranjaments.",
+
+    "span.press_kit": "Conjunt de materials informatius i promocionals — textos, fotos, mostres i vídeos - de concerts i esdeveniments",
+
+    "h1.contact": "La teva idea combina amb la meva música? Parlem!"
+}

@@ -1,0 +1,31 @@
+<div class="lang-wrapper">
+
+  <button
+    type="button"
+    class="lang-trigger"
+    (click)="toggleDropdown()"
+    aria-haspopup="menu"
+    [attr.aria-expanded]="dropdownOpen"
+  >
+    <i class="fa fa-globe"></i>
+  </button>
+
+  <ul 
+    class="lang-dropdown"
+    [class.open]="dropdownOpen"
+    role="menu"
+  >
+    @for (lang of availableLangs; track lang.code) {
+      <li
+        role="menuitem"
+        tabindex="0"
+        (click)="changeLang(lang.code)"
+        (keydown.enter)="changeLang(lang.code)"
+        [class.active]="currentLang() === lang.code"
+      >
+        {{ lang.label }}
+      </li>
+    }
+  </ul>
+
+</div>

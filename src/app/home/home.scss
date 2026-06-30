@@ -1,0 +1,118 @@
+.home {
+    background-image: url('/images/home_background.png');
+    @media (max-width:1279px) {
+        background-image: url('/images/home_background_mobile.png');
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    @media (max-width: 1279px){
+        padding-bottom: 110vw;
+        app-header {
+            display: none;
+        }
+    }
+    .title {
+        font-family: "Bebas Neue", sans-serif;
+        color: white;
+        font-size: 27vw;
+        text-align: center;
+        @media (max-width: 1279px) {
+            margin-bottom: -6vw;
+        }
+        @media (min-width: 1280px) {
+            margin-left: 6vw;
+            font-size: 16vw;
+            text-align: start;
+        }
+    }
+    .subTitle {
+        font-family: "Instrument Serif", serif;
+        color: white;
+        font-style: italic;
+        margin-left: 6vw;
+        font-size: 5vw;
+        @media (max-width: 1279px) {
+            margin-left: 4vw;
+        }
+    }
+    .call {
+        padding: 10px 20px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        margin-left: 6vw;
+        background-color: white;
+        &:hover {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 1279px) {
+            padding: 8px 8px;
+            font-size: 12px;
+            margin-left: 4vw;
+        }
+    }
+    @media (min-width: 1280px) {
+        .language_mobile {
+            display: none;        
+        }
+    }
+    .grid_redes{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 220px;
+        margin: 42px 6vw;
+        padding-bottom: 12vw;
+        @media (max-width: 1279px) {
+            display: inline-flex;
+            margin: 10px 4vw;
+            padding-bottom: 0;
+        }
+        i {
+          color: white;
+          padding: 5px 2px;
+          margin-right: 2%;
+        }
+
+        .fa {
+            font-size: 2em;
+        }
+
+        .fa-instagram:hover {
+          background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .fa-facebook:hover {
+          color: #0866ff;
+        }
+        .fa-youtube-play:hover {
+          color: red;
+        }
+
+        .tiktok-link {
+          margin: auto;
+            .tiktok {
+              background-image: url('/images/tiktok.png');
+              background-size: 23px;
+              background-position: center;
+              background-repeat: no-repeat;
+              width: 32px;
+              height: 41px;
+                &:hover {
+                    background-image: url('/images/tiktok-hover.png');
+                    background-size: 25px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 32px;
+                    height: 41px;
+                }    
+            }
+        }
+    }
+}   

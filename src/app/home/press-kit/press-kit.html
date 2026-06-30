@@ -1,0 +1,18 @@
+<div class="press_kit">
+    <div class="container">
+        <div class="fileWithThumbAndText">
+            @for (pdf of pdfs; track pdf.nome) {
+              <a [href]="pdf.url" target="_blank">
+                <img class="thumb_pdf" [src]="pdf.thumb" alt="Thumbnail PRESS KIT">
+              </a>
+            }
+            <span>
+                {{ "span.press_kit" | translate }}
+            </span>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>{{ "h1.contact" | translate }}</h1>
+        <button onclick="window.location.href='mailto:contato.lemuriano@gmail.com'">{{ "contact.button" | translate }}</button>
+    </div>
+</div>

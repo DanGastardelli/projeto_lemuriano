@@ -1,0 +1,32 @@
+<div class="home">
+  <app-header></app-header>
+  <div class="title">
+    <span>Lemuriano</span>
+  </div>
+  <span class="subTitle">{{ 'subTitle.home' | translate }}</span>
+  <br>
+  <div style="display: flex">
+    <button class="call" onclick="window.location.href='mailto:contato.lemuriano@gmail.com'">{{ 'button_home.home' | translate }}</button>
+    <div class="language_mobile"><app-language-switcher></app-language-switcher></div>
+  </div>
+  <div class="social_media">
+      <div class="grid_redes">
+        <a target="_black" href="https://www.instagram.com/le.muriano/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a target="_black" href="https://www.facebook.com/lemurianooficial">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a target="_black" href="https://www.youtube.com/@le.muriano">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </a>
+        <a class="tiktok-link" target="_black" href="https://www.tiktok.com/@le.muriano">
+          <div class="tiktok"></div>
+        </a>
+      </div>
+  </div>
+  <br>
+</div>
+<app-about></app-about>
+<app-partnerships></app-partnerships>
+<app-press-kit></app-press-kit>

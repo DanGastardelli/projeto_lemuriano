@@ -1,0 +1,42 @@
+.patnerships {
+    background-image: url('/images/partnerships_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
+        margin: 0 8vw;
+        padding: 100px 0;
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+        .patnership_one {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            color: white;
+            @media (max-width: 1279px) {
+                grid-template-columns: 1fr;
+            }
+        }
+        .patnership_two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            color: white;
+            @media (max-width: 1279px) {
+                grid-template-columns: 1fr;
+            }
+            .text {
+                text-align: end;
+            }
+        }
+        img {
+            width: 520px;
+            border-radius: 35px;
+            @media (max-width: 620px) {
+                width: 320px;
+            }
+        }
+    }
+}

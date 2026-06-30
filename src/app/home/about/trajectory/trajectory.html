@@ -1,0 +1,31 @@
+<div id="trajectory" class="container">
+    <div class="carousel">
+      <div class="slides" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+        @for (slide of slides; track slide; let i = $index) {
+          <div class="slide">
+            <div class="content">
+              <img [src]="slide.image" alt="slide image">
+              <div class="text">
+                <h2>{{ 'carousel.' + slide.key + '.title' | translate }}</h2>
+                <p>{{ 'carousel.' + slide.key + '.desc' | translate }}</p>
+                @if (slide.extraImage) {
+                  <img class="extra-image" [src]="slide.extraImage" />
+                }
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+      <button class="nav left" (click)="prev()">
+        &#10094;
+      </button>
+      <button class="nav right" (click)="next()">
+        &#10095;
+      </button>
+      <div class="indicators">
+        @for (slide of slides; track slide; let i = $index) {
+            <span [class.active]="i === currentIndex" (click)="goTo(i)"></span>
+        }
+      </div>
+    </div>
+</div>    

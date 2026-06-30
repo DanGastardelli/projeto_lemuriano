@@ -1,0 +1,85 @@
+.footer {
+  background-image: url('/images/footer_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -80px;
+  padding: 10px 0 10px;
+  .container {
+    @media (min-width: 1280px) {
+      display: flex;
+      gap: 200px
+    }
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    img {
+      width: 290px;
+    }
+    .menu_options {
+        margin: 0 10px;
+        font-size: 16px;
+        color: #D9D9D980;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+            font-size: 20px;
+            color: #d9d9d9;
+        }
+    }
+    .grid_redes{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 220px;
+        margin: 10px 6vw 0;
+        @media (max-width: 1279px) {
+            margin: 10px auto;
+            padding-bottom: 0;
+        }
+        i {
+          color: white;
+          padding: 5px 10px;
+          margin-right: 2%;
+        }
+        .fa {
+            font-size: 2em;
+        }
+        .fa-instagram:hover {
+          background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .fa-facebook:hover {
+          color: #0866ff;
+        }
+        .fa-youtube-play:hover {
+          color: red;
+        }
+
+        .tiktok-link {
+          margin: auto;
+            .tiktok {
+              background-image: url('/images/tiktok.png');
+              background-size: 23px;
+              background-position: center;
+              background-repeat: no-repeat;
+              width: 32px;
+              height: 41px;
+                &:hover {
+                    background-image: url('/images/tiktok-hover.png');
+                    background-size: 25px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 32px;
+                    height: 41px;
+                }    
+            }
+        }
+    }
+  }
+}
