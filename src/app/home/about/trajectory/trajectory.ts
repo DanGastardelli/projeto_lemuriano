@@ -1,15 +1,15 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface Slide {
   image: string;
-  title: string;
-  description: string;
+  key: string;
   extraImage?: string;
 }
 
 @Component({
   selector: 'app-trajectory',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './trajectory.html',
   styleUrl: './trajectory.scss',
 })
@@ -19,56 +19,46 @@ export class Trajectory implements OnInit, OnDestroy {
   slides: Slide[] = [
     {
       image: 'images/slide1.jpg',
-      title: 'Show Soberano Itaipava',
-      description: 'O show no Soberano Itaipava reforçou a presença do Lemuriano nos palcos, levando ao público uma apresentação sensível que une música e poesia.'
+      key: 'slide1'
     },
     {
       image: 'images/slide2.jpg',
-      title: 'Show com Hermínio Bello',
-      description: 'O show do Lemuriano contou com a participação especial de Hermínio Bello de Carvalho, em um momento marcante ao som da música “Dia Sim, Dia Não” composta pelos dois músicos.'
+      key: 'slide2'
     },
     {
       image: 'images/slide3.jpg',
-      title: 'Show Solar de Botafogo',
-      description: 'O primeiro show do Lemuriano no Solar de Botafogo, no Rio de Janeiro, em 2023, marcando mais um momento mágico na cidade com uma apresentação autoral.',
+      key: 'slide3',
       extraImage: 'images/slide32.jpg'
     },
     {
       image: 'images/slide4.jpg',
-      title: 'Show Teatro Brigitte Blair',
-      description: 'Uma apresentação intimista e mágica que reforçou a identidade autoral do Lemuriano e a conexão com o público.'
+      key: 'slide4',
     },
     {
       image: 'images/slide5.jpg',
-      title: 'Show Cesgranrio',
-      description: 'O primeiro show do Lemuriano no Cesgranrio marcou sua estreia nesse espaço cultural, apresentando ao público um repertório autoral que consolidou sua presença em novos palcos.',
+      key: 'slide5',
       extraImage: 'images/slide52.jpg'
     },
     {
       image: 'images/slide6.jpg',
-      title: 'Show Cesgranrio 2',
-      description: 'O segundo show no Cesgranrio contou com a participação especial de Tuca Mei, fortalecendo o diálogo artístico e ampliando a experiência do público com o encontro entre vozes e trajetórias.',
+      key: 'slide6',
       extraImage: 'images/slide62.jpg'
     },
     {
       image: 'images/slide7.jpg',
-      title: 'Show Voz e Violão em Minas Gerais',
-      description: 'Show feito para a Inauguração da estação ferroviária da cidade de São Sebastião do Rio Verde em Minas Gerais.'
+      key: 'slide7',
     },
     {
       image: 'images/slide8.jpg',
-      title: 'Centro da Música Carioca',
-      description: 'Show no Centro da Música Carioca, com uma participação especial de Tuca Mei, marcando um momento especial na trajetória do Lemuriano.'
+      key: 'slide8',
     },
     {
       image: 'images/slide9.jpg',
-      title: 'Sesc Rosinha de Valença',
-      description: 'Show no Sesc Rosinha de Valença, marcando a estreia do Lemuriano em uma unidade Sesc, com banda completa no palco.'
+      key: 'slide9',
     },
     {
       image: 'images/slide10.jpg',
-      title: 'Centro Cultural Cazuza',
-      description: 'Show em Valença, em Outubro de 2025 com participação especial de Tuca Mei.'
+      key: 'slide10',
     }
   ];
 
@@ -78,29 +68,45 @@ export class Trajectory implements OnInit, OnDestroy {
   ngOnInit() {
     this.startAutoPlay();
   }
-
+  
   ngOnDestroy() {
-    clearInterval(this.intervalId);
+    this.stopAutoPlay();
   }
-
+  
   startAutoPlay() {
     this.intervalId = setInterval(() => {
-      this.next();
+      this.next(false);
     }, 5000);
   }
-
-  next() {
+  
+  stopAutoPlay() {
+    clearInterval(this.intervalId);
+  }
+  
+  restartAutoPlay() {
+    this.stopAutoPlay();
+    this.startAutoPlay();
+  }
+  
+  next(manual: boolean = true) {
     this.currentIndex =
       (this.currentIndex + 1) % this.slides.length;
+  
+    if (manual) {
+      this.restartAutoPlay();
+    }
   }
-
+  
   prev() {
     this.currentIndex =
       (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  
+    this.restartAutoPlay();
   }
-
+  
   goTo(index: number) {
     this.currentIndex = index;
+    this.restartAutoPlay();
   }
 
 }

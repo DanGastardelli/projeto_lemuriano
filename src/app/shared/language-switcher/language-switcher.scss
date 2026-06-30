@@ -1,0 +1,42 @@
+.lang-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .lang-trigger {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    @media (max-width: 1279px) {
+      font-size: 25px;
+    }
+  }
+  
+  .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 93px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    display: none;
+    z-index: 9999;
+
+    &.open {
+      display: block;
+    }
+
+    li {
+      padding: 8px;
+      cursor: pointer;
+      color: #05102b;
+    }
+  }
+}

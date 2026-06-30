@@ -10,7 +10,7 @@
     border-bottom-left-radius: 5vw;
     border-bottom-right-radius: 5vw;
     @media (max-width: 1279px){
-        padding-bottom: 100vw;
+        padding-bottom: 110vw;
         app-header {
             display: none;
         }
@@ -18,7 +18,7 @@
     .title {
         font-family: "Bebas Neue", sans-serif;
         color: white;
-        font-size: 26vw;
+        font-size: 27vw;
         text-align: center;
         @media (max-width: 1279px) {
             margin-bottom: -6vw;
@@ -52,9 +52,14 @@
             cursor: pointer;
         }
         @media (max-width: 1279px) {
-            padding: 8px 14px;
-            font-size: 14px;
+            padding: 8px 8px;
+            font-size: 12px;
             margin-left: 4vw;
+        }
+    }
+    @media (min-width: 1280px) {
+        .language_mobile {
+            display: none;        
         }
     }
     .grid_redes{

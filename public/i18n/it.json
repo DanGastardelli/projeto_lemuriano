@@ -1,0 +1,54 @@
+{
+    "about.header": "Informazioni sull'artista",
+    "listen.header": "Ascolta ora",
+    "trajectory.header": "Percorso",
+
+    "subTitle.home": "Musica in stato lirico",
+    "button_home.home": "Parliamone?",
+
+    "title.about": "Informazioni sull'artista",
+    "p1.about": "Lemuriano è compositore, poeta e cantante. I suoi spettacoli sono costruiti come esperienze immersive, in cui le canzoni si collegano e guidano il pubblico attraverso una narrazione dall'inizio alla fine.",
+    "p2.about": "In formato voce e chitarra, presenta brani originali, classici della musica brasiliana e poesia, unendo un'interpretazione sensibile ad arrangiamenti distintivi.",
+    
+    "contact.button": "CONTATTAMI",
+
+    "title.listen": "Brani popolari",
+
+    "carousel.slide1.title": "Soberano Jazz Club",
+    "carousel.slide1.desc": "Uno dei principali locali di spettacolo dell'entroterra di Rio de Janeiro, dove Lemuriano ha realizzato due esibizioni con il tutto esaurito – voce e chitarra e anche con band. Così ha consolidato la sua presenza nella scena d'autore della regione con spettacoli caratterizzati da una forte connessione con il pubblico locale.",
+
+    "carousel.slide2.title": "Concerto con Hermínio Bello",
+    "carousel.slide2.desc": "Il concerto di Lemuriano ha visto la partecipazione speciale di Hermínio Bello de Carvalho, in un momento significativo al suono della canzone 'Dia Sim, Dia Não' composta da entrambi i musicisti.",
+
+    "carousel.slide3.title": "Concerto Solar de Botafogo",
+    "carousel.slide3.desc": "Il primo concerto di Lemuriano al Solar de Botafogo, a Rio de Janeiro, nel 2023, segnando un altro momento magico nella città con una performance d'autore.",
+
+    "carousel.slide4.title": "Concerto Teatro Brigitte Blair",
+    "carousel.slide4.desc": "Una performance intima e magica che ha rafforzato l'identità d'autore di Lemuriano e la connessione con il pubblico.",
+
+    "carousel.slide5.title": "Concerto Cesgranrio",
+    "carousel.slide5.desc": "Il primo concerto di Lemuriano al Cesgranrio ha segnato il suo debutto in questo spazio culturale, presentando al pubblico un repertorio d'autore che ha consolidato la sua presenza su nuovi palchi.",
+
+    "carousel.slide6.title": "Concerto Cesgranrio 2",
+    "carousel.slide6.desc": "Il secondo concerto al Cesgranrio ha visto la partecipazione speciale di Tuca Mei, rafforzando il dialogo artistico e ampliando l'esperienza del pubblico con l'incontro tra voci e percorsi.",
+
+    "carousel.slide7.title": "Concerto Voce e Chitarra a Minas Gerais",
+    "carousel.slide7.desc": "Concerto realizzato per l'inaugurazione della stazione ferroviaria della città di São Sebastião do Rio Verde in Minas Gerais.",
+
+    "carousel.slide8.title": "Centro della Musica Carioca",
+    "carousel.slide8.desc": "Concerto al Centro della Musica Carioca, con una partecipazione speciale di Tuca Mei, segnando un momento speciale nel percorso di Lemuriano.",
+
+    "carousel.slide9.title": "Sesc Rosinha de Valença",
+    "carousel.slide9.desc": "Concerto al Sesc Rosinha de Valença, segnando il debutto di Lemuriano in una unità Sesc, con band completa sul palco.",
+
+    "carousel.slide10.title": "Centro Culturale Cazuza",
+    "carousel.slide10.desc": "Concerto a Valença, nell'ottobre 2025 con la partecipazione speciale di Tuca Mei.",
+
+    "p1.partnerships": "Rinomato compositore, poeta e produttore culturale brasiliano, responsabile per aver lanciato nomi come Simone e Clementina de Jesus.",
+    "p2.partnerships": "Partner di Lemuriano, è coautore di canzoni come 'Dia Sim, Dia Não', registrata da Simone. La collaborazione unisce generazioni — 65 anni di differenza — e Lemuriano considera Hermínio una delle sue maggiori ispirazioni artistiche.",
+    "p3.partnerships": "Cantante e compositrice, partner artistica di Lemuriano. Insieme hanno sviluppato un lavoro caratterizzato da canzoni profonde e interpretazioni intense. Sono conosciuti per l'armonia vocale e per una rara affinità nei testi e negli arrangiamenti.",
+
+    "span.press_kit": "Insieme di materiali informativi e promozionali — testi, foto, estratti e video - di concerti ed eventi",
+
+    "h1.contact": "La tua idea si abbina alla mia musica? Parliamone!"
+}

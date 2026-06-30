@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-press-kit',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './press-kit.html',
   styleUrl: './press-kit.scss',
 })
